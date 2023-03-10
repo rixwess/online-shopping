@@ -11,6 +11,7 @@ const Logo = styled ('a')`
     color: black;
     font-size:50px;
     text-decoration:none;
+    font-family: 'Manrope';
 `
 
 const Ul = styled('ul')`
@@ -33,7 +34,6 @@ border-radius: 8px;
 `
 
 const Link = styled('a')`
-    font-family: 'Manrope';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;

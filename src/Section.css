@@ -1,0 +1,31 @@
+.showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.showcase .right img{
+    width: 800px;
+}
+
+.showcase .left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.showcase .left button{
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3C9379;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.showcase .left h1 span{
+   color: #3C9379;
+}
