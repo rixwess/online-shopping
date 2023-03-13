@@ -6,12 +6,15 @@ const Container = styled('div')`
     justify-content: space-between;
     padding: 20px 0;
     
+    
 `
 const Logo = styled ('a')`
     color: black;
     font-size:50px;
     text-decoration:none;
     font-family: 'Manrope';
+    margin-left: 30px;
+    
 `
 
 const Ul = styled('ul')`
@@ -53,11 +56,11 @@ function Example() {
     <Container>
         <Logo href=""> Selfie </Logo>
         <Ul className="Nav">
-        <li><Link href="#1">Home</Link></li>
-        <li><Link href="#1">Products</Link></li>
-        <li><Link href="#1">Categorias</Link></li>
-        <li><Link href="#1">Brands</Link></li>
-        <li><Link href="#1">Pricing</Link></li>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/products">Products</Link></li>
+        <li><Link href="/pricing">Categorias</Link></li>
+        <li><Link href="/category">Brands</Link></li>
+        <li><Link href="/brand">Pricing</Link></li>
         </Ul>
         <div>
             <Button>Login</Button>
