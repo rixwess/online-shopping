@@ -1,24 +1,31 @@
-// import { hover } from '@testing-library/user-event/dist/hover';
-// import Brands from './Brands';
-// import Categories from './components/Categories';
-// import logo from './logo.svg';
-// import Example from './Navbar';
-// import Section from './Section';
+import { hover } from '@testing-library/user-event/dist/hover';
+import Brands from './Brands';
+import Categories from './components/Categories';
+
+import Example from './Navbar';
+import Section from './Section';
+import Navbar from './Navbar';
+import Products from './pages/Products';
+import Pricing from './pages/Pricing';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 
 function App() {
   return(
     <BrowserRouter>
-      <Routes>
-        <Route  path="/" element={<Home />}/>
-        {/* <Route  path="/brand" element={<h1>Bye</h1>}/> */}
-        {/* <Route  path="/category" element={<Home/>}/>
-        <Route  path="/pricing" element={<Home/>}/>
-        <Route  path="/products" element={<Home/>}/> */}
+    <div className='App'>
+    <Navbar/>
+    <Routes>
+     <Route path='/' element={<Home/>}/>
+     <Route path='/Products' element={<Products/>}/>
+     <Route path='/Categories' element={<Categories/>}/>
+     <Route path='/Brands' element={<Brands/>}/>
+     <Route path='/Pricing' element={<Pricing/>}/>
       </Routes>
+        </div>
+
     </BrowserRouter>
-  )
+  );
   
 }
 

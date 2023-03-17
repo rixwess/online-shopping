@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled('div')`
     display:flex;
@@ -36,7 +37,7 @@ border-radius: 8px;
 }
 `
 
-const Link = styled('a')`
+const NavLink = styled(Link)`
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -55,13 +56,21 @@ function Example() {
   return (
     <Container>
         <Logo href=""> Selfie </Logo>
-        <Ul className="Nav">
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/products">Products</Link></li>
-        <li><Link href="/pricing">Categorias</Link></li>
-        <li><Link href="/category">Brands</Link></li>
-        <li><Link href="/brand">Pricing</Link></li>
-        </Ul>
+        <NavLink to="/">
+            Home
+        </NavLink>
+        <NavLink to="/products">
+            Products
+        </NavLink>
+        <NavLink to="/pricing">
+            Categorias
+        </NavLink>
+        <NavLink to="/category">
+            Brands
+        </NavLink>
+        <NavLink to="/brand">
+            Pricing
+        </NavLink>
         <div>
             <Button>Login</Button>
             <Button>Register</Button>
