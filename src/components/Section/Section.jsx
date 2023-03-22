@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Source from "../src/Image.png"
+import Source from "../../Image.png"
 import './Section.css'
 
 const Container = styled("div")`

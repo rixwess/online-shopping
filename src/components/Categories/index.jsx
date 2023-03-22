@@ -86,9 +86,9 @@ const Categories = () => {
             <Img4>
               <h2>Electronic</h2>
               <span>$10,000 items</span>
-            </Img4>
+          </Img4>
     </Container>
-    </CategroriesContainer>
+      </CategroriesContainer>
     );
 };
 

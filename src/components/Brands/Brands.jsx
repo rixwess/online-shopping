@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Source1 from "../src/Brand.png"
+import Source1 from "../../Brand.png"
 
 const Text = styled("p")`
   text-align: center;
@@ -23,7 +23,6 @@ const Brands = () => {
       <img src={Source1} alt=""  />
     </BrandLogos>
     </>
-
   );
 
 };

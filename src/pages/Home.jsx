@@ -1,12 +1,12 @@
 import React from 'react'
-import Brands from '../Brands'
+import Brands from '../components/Brands/Brands'
 import Categories from '../components/Categories/index'
-import Section from '../Section'
+import Section from '../components/Section/Section'
 
 const Home = () => {
   return (
     <div>
-         <Section/>
+        <Section/>
         <Brands/>
         <Categories/>
     </div>
