@@ -16,10 +16,6 @@ const Logo = styled("a")`
   margin-left: 30px;
 `
 
-const Ul = styled("ul")`
-  display: flex;
-  list-style: none;
-`
 const Button = styled("button")`
   border: none;
   padding: 15px 20px;

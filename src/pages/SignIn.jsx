@@ -2,6 +2,7 @@ import React from "react"
 import "./SignIn.css"
 import styled from "styled-components"
 import GoogleLogo from "../pages/google-logo-png.png"
+import { useNavigate } from "react-router-dom"
 
 const Input = styled("input")`
   width: 80%;
@@ -41,19 +42,19 @@ const OrContainer = styled("div")`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-const IMG = styled("img")`
-  width: 10rem;
-  height: 15rem;
-`;
-const Container = styled ("div")`
+`
+const Container = styled("div")`
   margin-left: 40rem;
   width: 120%;
   margin-top: 5rem;
 `
 
-
 const SignIn = () => {
+  const navigate = useNavigate()
+
+  const navigateTo = () => {
+    navigate("/")
+  }
   return (
     <Container>
       <div className="SignIn">
@@ -65,14 +66,13 @@ const SignIn = () => {
           <SubTitle>Welcome to Selfie</SubTitle>
           <Input type="text" placeholder="Email" />
           <Input type="password" placeholder="Password" />
-          <Button>Sign In</Button>
+          <Button onClick={navigateTo}>Sign In</Button>
           <OrContainer>
             <Or>or</Or>
             <hr style={{ width: "50%" }} />
             <div className="container">
-              {/* <img src={GoogleLogo} alt="googlelogo" style={{ margin: "0px" }} /> */}
               <p>Sign in with </p>
-                <img src={GoogleLogo} alt="" />
+              <img src={GoogleLogo} alt="" />
             </div>
           </OrContainer>
         </div>

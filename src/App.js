@@ -1,9 +1,4 @@
-import { hover } from "@testing-library/user-event/dist/hover"
 import Brands from "./components/Brands/Brands"
-import Categories from "./components/Categories"
-
-import Example from "./components/Navbar/Navbar"
-import Section from "./components/Section/Section"
 import Navbar from "./components/Navbar/Navbar"
 import Products from "./pages/Products"
 import Pricing from "./pages/Pricing"
