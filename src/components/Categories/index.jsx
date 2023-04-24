@@ -5,7 +5,7 @@ import img2 from './images/Image4.png'
 import img3 from './images/Image3.png'
 import img4 from './images/Image2.png'
 
-const Img1 = styled('div')`
+const Img1 = styled("div")`
   background-image: url(${img1});
   width: 500px;
   height: 180px;
@@ -15,8 +15,12 @@ const Img1 = styled('div')`
   padding: 2rem;
   color: white;
   margin-bottom: 2rem;
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
 `
-const Img2 = styled('div')`
+const Img2 = styled("div")`
   background-image: url(${img2});
   width: 500px;
   height: 180px;
@@ -25,8 +29,12 @@ const Img2 = styled('div')`
   align-items: flex-end;
   padding: 2rem;
   color: white;
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
 `
-const Img3 = styled('div')`
+const Img3 = styled("div")`
   background-image: url(${img3});
   width: 288px;
   height: 380px;
@@ -36,8 +44,12 @@ const Img3 = styled('div')`
   margin-left: 50px;
   padding: 2rem;
   color: white;
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
 `
-const Img4 = styled('div')`
+const Img4 = styled("div")`
   background-image: url(${img4});
   width: 350px;
   height: 385px;
@@ -47,6 +59,10 @@ const Img4 = styled('div')`
   align-items: flex-end;
   margin-left: 50px;
   color: white;
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 const Container = styled('div')`
