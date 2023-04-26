@@ -51,7 +51,6 @@ function Example() {
       <NavLink to="/Products ">Products</NavLink>
       <NavLink to="/Categories">Categorias</NavLink>
       <NavLink to="/category">Brands</NavLink>
-      <NavLink to="/brand">Pricing</NavLink>
       <div>
         <div className="link">
           <Link to={"/signin"}>Sign In</Link>
